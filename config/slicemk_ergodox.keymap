@@ -70,15 +70,15 @@
                 game_layer {
                         bindings = <
     &bootloader
-    &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans      &trans       &trans      &trans      &trans     &trans                              &trans      &trans      &trans      &trans      &trans      &trans
-    &trans      &trans       &trans      &trans      &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans      &trans       &trans      &trans      &trans                                                     &trans      &trans      &trans      &trans      &trans
-                                                                &trans      &trans      &trans      &trans
-                                                                            &trans      &trans
-                                                     &trans     &trans                              &trans      &trans
-                                                                            &trans      &trans
+    &trans      &trans       &trans       &trans      &trans      &trans        &trans     &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &trans       &trans       &trans      &trans      &trans        &trans     &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &trans       &trans       &trans      &trans      &trans                              &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &trans       &trans       &trans      &trans      &trans        &trans     &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &trans       &trans       &trans      &trans                                                           &trans       &trans       &trans        &trans            &trans
+                                                                  &trans        &trans     &trans     &trans
+                                                                                &trans     &trans
+                                                      &trans      &trans                              &trans           &trans
+                                                                                &trans     &trans
                         >;
                 };
 
