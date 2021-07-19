@@ -33,7 +33,7 @@
     &trans     &trans     &trans      &trans      &trans     &trans        &trans      &trans      &trans        &trans        &trans      &trans        &trans        &trans
     &trans     &trans     &kp LA(F16) &kp LA(F17) &kp F16    &kp F17       &trans      &trans      &kp LC(LEFT)  &kp LA(LEFT)  &kp UP      &kp LA(RIGHT) &kp LC(RIGHT) &trans
     &trans     &kp A      &trans      &trans      &trans     &kp LS(LG(Z))                         &kp PG_UP     &kp LEFT      &kp DOWN    &kp RIGHT     &trans        &trans
-    &trans     &trans     &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(Z)     &trans      &trans      &kp PG_DOWN   &trans        &trans      &trans        &trans        &trans
+    &trans     &trans     &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(Z)     &trans      &trans      &kp PG_DN     &trans        &trans      &trans        &trans        &trans
     &trans     &trans     &trans      &trans      &trans                                                         &trans        &trans      &trans        &trans        &trans
                                                              &trans        &trans      &trans      &trans
                                                                            &trans      &trans
