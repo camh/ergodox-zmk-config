@@ -12,22 +12,22 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                layer_0 {
+                default_layer {
                         bindings = <
     &bootloader
-    &none      &none         &none         &none       &none      &none      &none      &none      &none      &none      &none      &none      &none      &none
-    &kp ESC    &kp Q         &kp W         &kp E       &kp R      &kp T      &kp CLCK   &kp M_MUTE &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
-    &kp TAB    &mt LSFT A    &mt LCTRL S   &mt LALT D  &mt LGUI F &kp G                            &kp H      &kp J      &kp K      &kp L      &kp SCLN   &kp BKSP
-    &kp RET    &lt 3 Z       &kp X         &kp C       &kp V      &kp B      &kp M_VOLD &kp M_VOLU &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH   &mo 2
-    &none      &none         &kp LALT      &kp LARW    &kp DARW                                               &kp UARW   &kp RARW   &kp RALT   &none      &none
-                                                                  &kp DEL    &kp HOME   &kp END    &kp INS
-                                                                             &kp PGUP   &kp PGDN
-                                                       &kp SPC    &kp LCTL                         &kp LSFT   &kp RET
-                                                                             &kp LGUI   &mo 1
+    &none      &none         &none         &none       &none       &none      &none      &none      &none      &none      &none      &none      &none      &none
+    &kp ESC    &kp Q         &kp W         &kp E       &kp R       &kp T      &non       &none      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+    &kp TAB    &mt LSFT A    &mt LCTRL S   &mt LALT D  &mt LGUI F  &lt 2 G                          &kp H      &kp J      &kp K      &kp L      &kp SCLN   &kp BKSP
+    &kp RET    &lt 3 Z       &kp X         &kp C       &kp V       &kp B      &none      &none      &kp N      &kp M      &kp CMMA   &kp DOT    &kp FSLH   &mo 2
+    &none      &none         &kp LALT      &kp LARW    &kp DARW                                                &none      &none      &none      &none      &none
+                                                                   &none      &none      &none      &none
+                                                                              &none      &none
+                                                       &kp SPC     &mo 1                            &mo 2      &kp BKSP
+                                                                              &none   &none
                         >;
                 };
 
-                layer_1 {
+                common_layer {
                         bindings = <
     &bootloader
     &trans     &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &bt BT_CLR
@@ -42,7 +42,7 @@
                         >;
                 };
 
-                layer_2 {
+                number_layer {
                         bindings = <
     &bootloader
     &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &bt BT_SEL 0
@@ -57,7 +57,7 @@
                         >;
                 };
 
-                layer_3 {
+                symbols_layer {
                         bindings = <
     &bootloader
     &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &bt BT_SEL 0
