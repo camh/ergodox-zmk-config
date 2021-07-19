@@ -46,7 +46,7 @@
     &trans     &trans     &trans      &trans      &trans     &trans        &trans      &trans      &trans        &trans        &trans      &trans        &trans        &trans
     &trans     &trans     &kp LA(F16) &kp LA(F17) &kp F16    &kp F17       &trans      &trans      &kp LC(LEFT)  &kp LA(LEFT)  &kp UP      &kp LA(RIGHT) &kp LC(RIGHT) &kp DEL
     &trans     &kp A      &trans      &trans      &trans     &kp LS(LG(Z))                         &kp PG_UP     &kp LEFT      &kp DOWN    &kp RIGHT     &trans        &trans
-    &trans     &trans     &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(Z)     &trans      &trans      &kp PG_DN     &trans        &trans      &trans        &trans        &trans
+    &trans     &trans     &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(Z)     &trans      &trans      &kp PG_DN     &trans        &trans      &trans        &trans        &to 4
     &trans     &trans     &trans      &trans      &trans                                                         &trans        &trans      &trans        &trans        &trans
                                                              &trans        &trans      &trans      &trans
                                                                            &trans      &trans
@@ -78,6 +78,21 @@
     &trans      &kp LA(SEMI) &kp LBKT     &kp RBKT    &kp LBRC    &kp RBRC                            &kp LPAR         &kp RPAR     &kp SQT      &kp DQT       &kp LS(LA(MINUS)) &trans  
     &trans      &trans       &kp BSLH     &kp PIPE    &kp UNDER   &kp MINUS     &trans     &trans     &kp EQUAL        &kp PLUS     &kp SLASH    &kp QMARK     &trans            &trans
     &trans      &trans       &trans       &trans      &trans                                                           &trans       &trans       &trans        &trans            &trans
+                                                                  &trans        &trans     &trans     &trans
+                                                                                &trans     &trans
+                                                      &trans      &trans                              &trans           &trans
+                                                                                &trans     &trans
+                        >;
+                };
+
+                game_layer {
+                        bindings = <
+    &bootloader
+    &kp ESC     &kp N1       &kp N2       &kp N3      &kp N4      &kp N5        &kp N6     &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &kp TAB     &trans       &trans       &trans      &trans      &trans        &kp Y      &trans     &trans           &trans       &trans       &trans        &trans            &trans   
+    &kp LSFT    &kp A        &kp S        &kp D       &kp F       &kp G                               &trans           &trans       &trans       &trans        &trans            &trans  
+    &kp RET     &kp Z        &trans       &trans      &trans      &trans        &kp H      &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &trans       &kp N        &kp M       &kp L                                                            &trans       &trans       &trans        &trans            &trans
                                                                   &trans        &trans     &trans     &trans
                                                                                 &trans     &trans
                                                       &trans      &trans                              &trans           &trans
