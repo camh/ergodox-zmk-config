@@ -60,15 +60,15 @@
                 symbols_layer {
                         bindings = <
     &bootloader
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &kp A      &trans     &trans     &trans     &trans                             &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans                                                    &trans      &trans      &trans      &trans      &trans
-                                                           &trans     &trans      &trans      &trans
-                                                                      &trans      &trans
-                                                &trans     &trans                             &trans      &trans
-                                                                      &trans      &trans
+    &trans      &trans       &trans       &trans      &trans      &trans        &trans     &trans     &trans           &trans       &trans       &trans        &trans            &trans
+    &trans      &kp EXCL     &kp AT       &kp HASH    &kp DLLR    &kp PRCNT     &trans     &trans     &kp CARET        &kp AMPS     &kp STAR     &kp GRAVE     &kp TILDE         &trans   
+    &trans      &kp LA(SEMI) &kp LBKT     &kp RBKT    &kp LBRC    &kp RBRC                            &kp LPAR         &kp LPAR     &kp SQT      &kp DQT       &kp LS(LA(MINUS)) &trans  
+    &trans      &trans       &kp BSLH     &kp PIPE    &kp UNDER   &kp MINUS     &trans     &trans     &kp EQUAL        &kp PLUS     &kp SLASH    &kp QMARK     &trans            &trans
+    &trans      &trans       &trans       &trans      &trans                                                           &trans       &trans       &trans        &trans            &trans
+                                                                  &trans        &trans     &trans     &trans
+                                                                                &trans     &trans
+                                                      &trans      &trans                              &trans           &trans
+                                                                                &trans     &trans
                         >;
                 };
 
