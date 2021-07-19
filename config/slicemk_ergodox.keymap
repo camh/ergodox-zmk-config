@@ -30,15 +30,15 @@
                 common_layer {
                         bindings = <
     &bootloader
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &kp A      &trans     &trans     &trans     &trans                             &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans     &trans     &trans     &trans                                                    &trans      &trans      &trans      &trans      &trans
-                                                           &trans     &trans      &trans      &trans
-                                                                      &trans      &trans
-                                                &trans     &trans                             &trans      &trans
-                                                                      &trans      &trans
+    &trans     &trans     &trans      &trans      &trans     &trans        &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans     &kp LA(F16) &kp LA(F17) &kp F16    &kp F17       &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &kp A      &trans      &trans      &trans     &kp LS(LG(Z))                         &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans     &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(Z)     &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans     &trans      &trans      &trans                                                       &trans      &trans      &trans      &trans      &trans
+                                                             &trans        &trans      &trans      &trans
+                                                                           &trans      &trans
+                                                  &trans     &trans                                &trans      &trans
+                                                                           &trans      &trans
                         >;
                 };
 
