@@ -25,6 +25,16 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
             };
+            meh: meh_mod_tap {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "MEH MOD-TAP";
+                    #binding-cells = <1>;
+                    tapping-term-ms = <211>;
+                    quick_tap_ms = <0>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>;
+                    mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            };
         };
 
         keymap {
@@ -36,9 +46,9 @@
     &none      &none         &none         &none       &none       &none      &none      &none      &none      &none            &none      &none       &none         &none
     &kp ESC    &kp Q         &kp W         &kp E       &kp R       &kp T      &none      &none      &kp Y      &kp U            &kp I      &kp O       &kp P         &kp BSLH
     &kp TAB    &hm LSFT A    &hm LCTRL S   &hm LALT D  &hm LGUI F  &lt NUM G                        &kp H      &hm RGUI J       &hm RALT K &hm RCTRL L &hm RSFT SCLN &kp SQT
-    &kp RET    &lt SYM Z     &kp X         &kp C       &kp V       &kp B      &none      &none      &kp N      &kp M            &kp CMMA   &kp DOT     &lt SYM MINUS &kp SLASH
+    &meh RET   &lt SYM Z     &kp X         &kp C       &kp V       &kp B      &none      &none      &kp N      &kp M            &kp CMMA   &kp DOT     &lt SYM MINUS &kp SLASH
     &none      &none         &none         &none       &kp LGUI                                                &kp LC(LS(LALT)) &none      &none       &none         &none
-                                                                   &none      &none      &none      &none
+                                                                   &none      &none      &C_VOL_DN  &C_VOL_UP
                                                                               &none      &none
                                                        &kp SPC     &mo COM                          &mo NUM    &kp BKSP
                                                                               &none      &none
