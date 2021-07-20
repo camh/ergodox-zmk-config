@@ -8,6 +8,9 @@
 #define SYM 3
 #define GAME 4
 #define MEH LC(LS(LALT))
+#define VOL_DN C_VOL_DN
+#define VOL_UP C_VOL_UP
+#define END_CALL LC(LA(LG(END)))
 
 &mt {
     tapping_term_ms = <211>;
@@ -34,15 +37,15 @@
                 default_layer {
                         bindings = <
     &bootloader
-    &none        &none         &none         &none       &none       &none      &none      &none         &none        &none            &none      &none       &none         &none
-    &kp ESC      &kp Q         &kp W         &kp E       &kp R       &kp T      &none      &none         &kp Y        &kp U            &kp I      &kp O       &kp P         &kp BSLH
-    &kp TAB      &hm LSFT A    &hm LCTRL S   &hm LALT D  &hm LGUI F  &lt NUM G                           &kp H        &hm RGUI J       &hm RALT K &hm RCTRL L &hm RSFT SCLN &kp SQT
-    &hm MEH RET  &lt SYM Z     &kp X         &kp C       &kp V       &kp B      &none      &none         &kp N        &kp M            &kp CMMA   &kp DOT     &lt SYM MINUS &hm LC(LS(LALT)) SLASH
-    &none        &none         &none         &none       &kp LGUI                                                     &kp LC(LS(LALT)) &none      &none       &none         &none
-                                                                     &none      &none      &kp C_VOL_DN  &kp C_VOL_UP 
-                                                                                &none      &none
-                                                         &kp SPC     &mo COM                             &mo NUM      &kp BKSP
-                                                                                &none      &none
+    &none       &none      &none       &none       &none      &none      &none      &none       &none        &none      &none      &none       &none          &none
+    &kp ESC     &kp Q      &kp W       &kp E       &kp R      &kp T      &none      &none       &kp Y        &kp U      &kp I      &kp O       &kp P          &kp BSLH
+    &kp TAB     &hm LSFT A &hm LCTRL S &hm LALT D  &hm LGUI F &lt NUM G                         &kp H        &hm RGUI J &hm RALT K &hm RCTRL L &hm RSFT SCLN  &kp SQT
+    &hm MEH RET &lt SYM Z  &kp X       &kp C       &kp V      &kp B      &none      &none       &kp N        &kp M      &kp CMMA   &kp DOT     &lt SYM MINUS  &hm MEH SLASH
+    &none       &none      &none       &none       &kp LGUI                                                  &kp MEH    &none      &none       &none          &none
+                                                              &none      &none      &kp VOL_DN  &kp VOL_UP 
+                                                                         &none      &none
+                                                   &kp SPC    &mo COM                           &mo NUM      &kp BKSP
+                                                                         &none      &none
                         >;
                 };
 
@@ -65,7 +68,7 @@
                         bindings = <
     &bootloader
     &trans     &trans     &trans     &trans     &trans     &trans     &trans      &trans      &trans          &trans      &trans      &trans      &trans       &trans
-    &trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans      &trans      &kp KP_ASTERISK &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS  &kp LC(LA(LG(END)))
+    &trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans      &trans      &kp KP_ASTERISK &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS  &kp END_CALL
     &trans     &trans     &trans     &trans     &trans     &trans                             &kp KP_SLASH    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS &kp KP_N0
     &trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans      &trans      &kp CMMA        &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT   &kp COLON
     &trans     &trans     &trans     &trans     &trans                                                        &trans      &trans      &trans      &trans       &trans
